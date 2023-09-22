@@ -1,0 +1,11 @@
+:root {
+    --spp-white: #F5F4F5;
+    --spp-gray: #98A8B0;
+    --spp-red: #EE4C27;
+    --spp-beige: #D08B58;
+    --spp-blue: #10273B;
+}
+
+body {
+    background-color: var(--spp-gray);
+}

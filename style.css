@@ -6,6 +6,38 @@
     --spp-blue: #10273B;
 }
 
+@font-face {
+    font-family: Lexend;
+    src: url("./Lexend.ttf");
+}
+
 body {
-    background-color: var(--spp-gray);
+    background-color: var(--spp-blue);
+    margin: 0;
+}
+
+.sidebar {
+    background-color: var(--spp-white);
+    width: 20vw;
+    height: 100vh;
+}
+
+.logo-bar {
+    background-color: var(--spp-red);
+    width: 20vw;
+    height: 10vh;
+    margin: 0;
+    display: grid;
+    place-items: center;
+}
+
+.logo-bar h1 {
+    text-align: center;
+    color: var(--spp-white);
+    font-family: Lexend;
+    margin: 0;
+}
+
+.neumann-title-box {
+    
 }

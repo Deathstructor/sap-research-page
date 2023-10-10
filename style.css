@@ -8,15 +8,17 @@
 
 @font-face {
     font-family: Lexend;
-    src: url("./Lexend.ttf");
+    src: url("./fonts/Lexend.ttf");
 }
 
 body {
     background-color: var(--spp-blue);
     margin: 0;
+    font-family: Lexend;
 }
 
 .sidebar {
+    position: fixed;
     background-color: var(--spp-white);
     width: 20vw;
     height: 100vh;
@@ -38,6 +40,38 @@ body {
     margin: 0;
 }
 
+.main-container {
+    margin-left: 20vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
 .neumann-title-box {
-    
+    background-color: var(--spp-beige);
+    margin: 3%;
+    padding: 0 2%;
+    border-radius: 15px;
+}
+
+.neumann-img {
+    width: 15%;
+    border-radius: 50%;
+}
+
+.neumann-title-box h1 {
+    font-size: 4ch;
+    color: var(--spp-white);
+}
+
+.neumann-text-box {
+    background-color: var(--spp-beige);
+    margin: 5%;
+    padding: 0 2%;
+    border-radius: 15px;
+}
+
+.neumann-text-box p {
+    color: var(--spp-white);
 }

@@ -1,0 +1,31 @@
+@import url("sidebar.css");
+@import url("nuemann.css");
+@import url("turing.css");
+
+:root {
+    --spp-white: #F5F4F5;
+    --spp-gray: #98A8B0;
+    --spp-red: #EE4C27;
+    --spp-beige: #D08B58;
+    --spp-blue: #10273B;
+}
+
+@font-face {
+    font-family: Lexend;
+    src: url("./fonts/Lexend.ttf");
+}
+
+body {
+    background-color: var(--spp-blue);
+    margin: 0;
+    font-family: Lexend;
+}
+
+
+.main-container {
+    margin-left: 20vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}

@@ -1,5 +1,5 @@
 @import url("sidebar.css");
-@import url("nuemann.css");
+@import url("neumann.css");
 @import url("turing.css");
 
 :root {
@@ -12,7 +12,7 @@
 
 @font-face {
     font-family: Lexend;
-    src: url("./fonts/Lexend.ttf");
+    src: url("../fonts/Lexend.ttf");
 }
 
 body {

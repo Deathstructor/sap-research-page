@@ -1,0 +1,29 @@
+
+
+.neumann-title-box {
+    background-color: var(--spp-beige);
+    margin: 3%;
+    padding: 0 2%;
+    border-radius: 15px;
+}
+
+.neumann-img {
+    width: 15%;
+    border-radius: 50%;
+}
+
+.neumann-title-box h1 {
+    font-size: 4ch;
+    color: var(--spp-white);
+}
+
+.neumann-text-box {
+    background-color: var(--spp-beige);
+    margin: 5%;
+    padding: 0 2%;
+    border-radius: 15px;
+}
+
+.neumann-text-box p {
+    color: var(--spp-white);
+}

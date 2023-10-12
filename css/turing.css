@@ -1,0 +1,72 @@
+.turing-title-container {
+    background-color: var(--spp-beige);
+    margin: 3%;
+    padding: 0 2%;
+    border-radius: 15px;
+    box-shadow: 0 0 20px #111;
+}
+
+.turing-title-container h1 {
+    font-size: 4ch;
+    color: var(--spp-white);
+    text-shadow: 0 0 10px #aae;
+}
+
+.turing-img {
+    width: 20%;
+    border-radius: 50%;
+    box-shadow: 0 0 20px #111;
+}
+
+.turing-text-container {
+    background-color: var(--spp-beige);
+    margin: 6%;
+    padding: 0 4%;
+    border-radius: 15px;
+    color: var(--spp-white);
+    box-shadow: 0 0 20px #111;
+}
+
+.turing-text-container h2 {
+    font-size: 175%;
+    margin-top: 10%;
+    margin-bottom: 0;
+    text-shadow: 0 0 5px #aae;
+}
+
+.turing-text-container h3 {
+    margin-top: 1%;
+    margin-bottom: 0;
+    font-size: 150%;
+    text-shadow: 0 0 4px #558;
+}
+
+.turing-text-container p {
+    font-size: large;
+    margin-top: 0.5%;
+}
+
+.turing-text-box {
+    display: flex;
+    align-items: center;
+    gap: 2%;
+}
+
+.turing-text-box img {
+    margin-right: 2%;
+    margin-top: 1%;
+    border-radius: 10px;
+    box-shadow: 0 0 20px #222;
+}
+
+.img-25-percent {
+    width: 25%;
+}
+
+.img-30-percent {
+    width: 30%;
+}
+
+.img-40-percent {
+    width: 40%;
+}

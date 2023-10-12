@@ -1,4 +1,4 @@
-.neumann-title-box {
+.neumann-title-container {
     background-color: var(--spp-beige);
     margin: 3%;
     padding: 0 2%;
@@ -6,10 +6,10 @@
     box-shadow: 0 0 20px #111;
 }
 
-.neumann-title-box h1 {
+.neumann-title-container h1 {
     font-size: 4ch;
     color: var(--spp-white);
-    text-shadow: 0 0 10px #558;
+    text-shadow: 0 0 10px #aae;
 }
 
 .neumann-img {
@@ -18,30 +18,55 @@
     box-shadow: 0 0 20px #111;
 }
 
-.neumann-text-box {
+.neumann-text-container {
     background-color: var(--spp-beige);
     margin: 6%;
-    padding: 0 2%;
+    padding: 0 4%;
     border-radius: 15px;
     color: var(--spp-white);
     box-shadow: 0 0 20px #111;
 }
 
-.neumann-text-box h2 {
+.neumann-text-container h2 {
     font-size: 175%;
-    margin-top: 4%;
+    margin-top: 10%;
     margin-bottom: 0;
-    text-shadow: 0 0 5px #558;
+    text-shadow: 0 0 5px #aae;
 }
 
-.neumann-text-box h3 {
+.neumann-text-container h3 {
     margin-top: 1%;
     margin-bottom: 0;
     font-size: 150%;
-    text-shadow: 0 0 4px #aae;
+    text-shadow: 0 0 4px #558;
 }
 
-.neumann-text-box p {
+.neumann-text-container p {
     font-size: large;
     margin-top: 0.5%;
+}
+
+.neumann-text-box {
+    display: flex;
+    align-items: center;
+    gap: 2%;
+}
+
+.neumann-text-box img {
+    margin-right: 2%;
+    margin-top: 1%;
+    border-radius: 10px;
+    box-shadow: 0 0 20px #222;
+}
+
+.img-25-percent {
+    width: 25%;
+}
+
+.img-30-percent {
+    width: 30%;
+}
+
+.img-40-percent {
+    width: 40%;
 }

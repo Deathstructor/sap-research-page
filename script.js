@@ -1,4 +1,4 @@
-var isDarkMode = localStorage.getItem("IsDark") || false;
+var isDarkMode = localStorage.getItem("IsDark") || "false";
 var cookieOK = localStorage.getItem("CookieOK");
 
 UpdatePageTheme();
@@ -6,7 +6,7 @@ UpdatePageTheme();
 if(!cookieOK) {
     if(confirm("Do you want to save cookies?")) {
         cookieOK = true;
-        localStorage.setItem("CookieOK", true);
+        localStorage.setItem("CookieOK", "true");
         UpdatePageTheme();
     }
 }
@@ -20,20 +20,19 @@ function GetTheme() {
 }
 
 function ToggleTheme() {
-    isDarkMode = !isDarkMode;
+    isDarkMode = isDarkMode == "true" ? "false" : "true";
     UpdatePageTheme();
     SaveTheme();
 }
 
 function SaveTheme() {
-    if(!cookieOK) return "Cookie is not allowed!";
-    localStorage.setItem("IsDark", isDarkMode);
+    if(cookieOK) localStorage.setItem("IsDark", isDarkMode.toString().toLowerCase());
 }
 
 function UpdatePageTheme() {
-    document.documentElement.style.setProperty('--spp-white', isDarkMode ? 'black' : '#F5F4F5');
-    document.documentElement.style.setProperty('--spp-gray', isDarkMode ? 'white' : '#98A8B0');
-    document.documentElement.style.setProperty('--spp-red', isDarkMode ? 'darkred' : '#EE4C27');
-    document.documentElement.style.setProperty('--spp-beige', isDarkMode ? 'darkgoldenrod' : '#D08B58');
-    document.documentElement.style.setProperty('--spp-blue', isDarkMode ? 'indigo' : '#10273B');
+    document.documentElement.style.setProperty('--spp-white', isDarkMode == "true" ? 'black' : '#F5F4F5');
+    document.documentElement.style.setProperty('--spp-gray', isDarkMode == "true" ? 'white' : '#98A8B0');
+    document.documentElement.style.setProperty('--spp-red', isDarkMode == "true" ? 'darkred' : '#EE4C27');
+    document.documentElement.style.setProperty('--spp-beige', isDarkMode == "true" ? 'darkgoldenrod' : '#D08B58');
+    document.documentElement.style.setProperty('--spp-blue', isDarkMode == "true" ? 'indigo' : '#10273B');
 }

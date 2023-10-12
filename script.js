@@ -26,14 +26,25 @@ function ToggleTheme() {
 }
 
 function SaveTheme() {
-    if(!cookieOK) return "Cookie is not allowed!";
-    localStorage.setItem("IsDark", isDarkMode);
+    if(cookieOK) localStorage.setItem("IsDark", isDarkMode);
 }
 
 function UpdatePageTheme() {
-    document.documentElement.style.setProperty('--spp-white', isDarkMode ? 'black' : '#F5F4F5');
-    document.documentElement.style.setProperty('--spp-gray', isDarkMode ? 'white' : '#98A8B0');
-    document.documentElement.style.setProperty('--spp-red', isDarkMode ? 'darkred' : '#EE4C27');
-    document.documentElement.style.setProperty('--spp-beige', isDarkMode ? 'darkgoldenrod' : '#D08B58');
-    document.documentElement.style.setProperty('--spp-blue', isDarkMode ? 'indigo' : '#10273B');
+    console.log(isDarkMode);
+    if(isDarkMode != "false") {
+        console.log(isDarkMode);
+        console.log(typeof(isDarkMode));
+        document.documentElement.style.setProperty('--spp-white', 'black');
+        document.documentElement.style.setProperty('--spp-gray', 'white');
+        document.documentElement.style.setProperty('--spp-red', 'darkred');
+        document.documentElement.style.setProperty('--spp-beige', 'darkgoldenrod');
+        document.documentElement.style.setProperty('--spp-blue', 'indigo');
+    } else {
+        console.log("LIGHT");
+        document.documentElement.style.setProperty('--spp-white', '#F5F4F5');
+        document.documentElement.style.setProperty('--spp-gray', '#98A8B0');
+        document.documentElement.style.setProperty('--spp-red', '#EE4C27');
+        document.documentElement.style.setProperty('--spp-beige', '#D08B58');
+        document.documentElement.style.setProperty('--spp-blue', '#10273B');
+    }
 }

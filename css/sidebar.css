@@ -29,10 +29,9 @@
     position: relative;
     border: 1px solid black;
     width: 1px;
-    height: 90vh;
+    height: 36vh;
     background-color: black;
 }
-
 
 .logo-bar h1 {
     text-align: center;
@@ -48,6 +47,12 @@
     height: 100vh;
 }
 
+.sidebar-extra ul {
+    position: absolute;
+    font-size: large;
+    margin-top: 50vh;
+}
+
 .logo-bar {
     background-color: var(--spp-red);
     width: 20vw;
@@ -56,3 +61,84 @@
     display: grid;
     place-items: center;
 }
+
+/* Alan Turing below */
+
+.alan-turing-branch-container {
+    position: absolute;
+    width: 15vw;
+    height: 40vh;
+    margin-left: 13px;
+    top: 15vh;
+    /* background-color: green; */
+    border: none;
+}
+
+.alan-turing-horizontal-line {
+    width: 50px;
+    height: 7px;
+    background-color: black;
+}
+
+.alan-turing-left-line {
+    position: fixed;
+    background-color: black;
+    margin-left: 25px;
+    width: 8px;
+    height: 188px;
+}
+
+.alan-turing-branch-container h1 {
+    position: relative;
+    font-size: x-large;
+    width: 200px;
+    margin-left: 60px;
+}
+
+.alan-turing-branch-container li {
+    font-size: large;
+    margin-top: 26px;
+    margin-left: 5px;
+}
+
+/* Alan Turing above */
+/* Von Nuemann below */
+
+.von-neumann-branch-container {
+    position: absolute;
+    width: 15vw;
+    height: 40vh;
+    margin-left: 13px;
+    top: 45vh;
+    /* background-color: green; */
+    border: none;
+}
+
+.von-neumann-horizontal-line {
+    width: 50px;
+    height: 7px;
+    background-color: black;
+}
+
+.von-neumann-left-line {
+    position: fixed;
+    background-color: black;
+    margin-left: 25px;
+    width: 8px;
+    height: 188px;
+}
+
+.von-neumann-branch-container h1 {
+    position: relative;
+    font-size: x-large;
+    width: 200px;
+    margin-left: 60px;
+}
+
+.von-neumann-branch-container li {
+    font-size: large;
+    margin-top: 26px;
+    margin-left: 5px;
+}
+
+/* Von Neumann above */

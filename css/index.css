@@ -1,0 +1,49 @@
+.index-container {
+    margin-left: 20vw;
+    padding-top: 25vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.index-title-container {
+    background-color: var(--spp-beige);
+    margin: 3%;
+    padding: 0 2%;
+    border-radius: 15px;
+    box-shadow: 0 0 20px #111;
+}
+
+.index-title-container h1 {
+    text-align: center;
+}
+
+.index-info-text {
+    background-color: var(--spp-beige);
+    margin: 15% 6%;
+    padding: 1% 4%;
+    border-radius: 15px;
+    color: var(--spp-white);
+    box-shadow: 0 0 20px #111;
+}
+
+.index-title-container h1 {
+    font-size: 4ch;
+    color: var(--spp-white);
+    text-shadow: 0 0 10px #aae;
+}
+
+.index-img {
+    width: 25%;
+    border-radius: 20px;
+}
+
+#index-neumann-img {
+    margin-left: 10%;
+    margin-right: 2%;
+}
+
+#index-turing-img {
+    margin-right: 10%;
+    margin-left: 2%;
+}

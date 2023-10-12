@@ -1,6 +1,7 @@
 @import url("sidebar.css");
 @import url("neumann.css");
 @import url("turing.css");
+@import url("extra.css");
 
 :root {
     --spp-white: #F5F4F5;

@@ -6,10 +6,6 @@
     justify-content: center;
 }
 
-.index-center-container {
-    /* margin: 0 10%; */
-}
-
 .index-title-container {
     background-color: var(--spp-beige);
     margin: 3%;

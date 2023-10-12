@@ -6,7 +6,7 @@
 }
 
 .sidebar-category {
-    margin: 10% 0;
+    margin: 5% 0;
     font-family: Lexend;
     font-size: x-large;
     text-shadow: 0 0 20px var(--spp-gray);
@@ -22,17 +22,25 @@
     color: var(--spp-blue);
 }
 
+.sidebar-category h1 {
+    font-size: x-large;
+    color: var(--spp-gray);
+    text-shadow: 0 0 20px var(--spp-gray);
+}
+
 .sidebar-subcategory {
     display: flex;
     flex-direction: column;
     margin: 5%;
     padding-left: 5%;
-    padding-right: 40%;
+    padding-right: 10%;
     font-size: 1.5rem;
     border-left: solid var(--spp-gray);
     border-width: 0.4vw;
     border-radius: 7%;
 }
+
+
 
 .sidebar {
     position: fixed;

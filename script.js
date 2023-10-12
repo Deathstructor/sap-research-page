@@ -1,4 +1,4 @@
-var isDarkMode = localStorage.getItem("IsDark") || false;
+var isDarkMode = localStorage.getItem("IsDark") || "false";
 var cookieOK = localStorage.getItem("CookieOK");
 
 UpdatePageTheme();
@@ -6,7 +6,7 @@ UpdatePageTheme();
 if(!cookieOK) {
     if(confirm("Do you want to save cookies?")) {
         cookieOK = true;
-        localStorage.setItem("CookieOK", true);
+        localStorage.setItem("CookieOK", "true");
         UpdatePageTheme();
     }
 }
@@ -20,7 +20,7 @@ function GetTheme() {
 }
 
 function ToggleTheme() {
-    isDarkMode = !isDarkMode;
+    isDarkMode = isDarkMode == "true" ? "false" : "true";
     UpdatePageTheme();
     SaveTheme();
 }

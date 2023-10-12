@@ -31,7 +31,7 @@ function SaveTheme() {
 
 function UpdatePageTheme() {
     console.log(isDarkMode);
-    if(isDarkMode != "false") {
+    if(isDarkMode) {
         console.log(isDarkMode);
         console.log(typeof(isDarkMode));
         document.documentElement.style.setProperty('--spp-white', 'black');

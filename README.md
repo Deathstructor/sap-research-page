@@ -8,4 +8,4 @@ This is a project where we will create a simple website with information about c
 - [Samuel Palmér](https://github.com/Samstroyer)
 
 ### License
-NOT YET APPLIED
+We use the Creative Commons 0 license! See more [here](./LICENSE)!

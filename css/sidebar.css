@@ -9,7 +9,6 @@
     margin: 5% 0;
     font-family: Lexend;
     font-size: x-large;
-    text-shadow: 0 0 20px var(--spp-gray);
 }
 
 .sidebar-category a {
@@ -25,7 +24,6 @@
 .sidebar-category h1 {
     font-size: x-large;
     color: var(--spp-gray);
-    text-shadow: 0 0 20px var(--spp-gray);
 }
 
 .sidebar-subcategory {

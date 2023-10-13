@@ -30,9 +30,9 @@ function SaveTheme() {
 }
 
 function UpdatePageTheme() {
-    document.documentElement.style.setProperty('--spp-white', isDarkMode == "true" ? 'black' : '#F5F4F5');
-    document.documentElement.style.setProperty('--spp-gray', isDarkMode == "true" ? 'white' : '#98A8B0');
-    document.documentElement.style.setProperty('--spp-red', isDarkMode == "true" ? 'darkred' : '#EE4C27');
-    document.documentElement.style.setProperty('--spp-beige', isDarkMode == "true" ? 'darkgoldenrod' : '#D08B58');
-    document.documentElement.style.setProperty('--spp-blue', isDarkMode == "true" ? 'indigo' : '#10273B');
+    document.documentElement.style.setProperty('--spp-white', isDarkMode == "true" ? '#3b3a3b' : '#F5F4F5');
+    document.documentElement.style.setProperty('--spp-gray', isDarkMode == "true" ? '#F5F4F5' : '#888880');
+    document.documentElement.style.setProperty('--spp-red', isDarkMode == "true" ? '#11b3d8' : '#EE4C27');
+    document.documentElement.style.setProperty('--spp-beige', isDarkMode == "true" ? '#2f74a7' : '#D08B58');
+    document.documentElement.style.setProperty('--spp-blue', isDarkMode == "true" ? '#10273B' : '#efd8c4');
 }

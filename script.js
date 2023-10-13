@@ -30,21 +30,9 @@ function SaveTheme() {
 }
 
 function UpdatePageTheme() {
-    console.log(isDarkMode);
-    if(isDarkMode) {
-        console.log(isDarkMode);
-        console.log(typeof(isDarkMode));
-        document.documentElement.style.setProperty('--spp-white', 'black');
-        document.documentElement.style.setProperty('--spp-gray', 'white');
-        document.documentElement.style.setProperty('--spp-red', 'darkred');
-        document.documentElement.style.setProperty('--spp-beige', 'darkgoldenrod');
-        document.documentElement.style.setProperty('--spp-blue', 'indigo');
-    } else {
-        console.log("LIGHT");
-        document.documentElement.style.setProperty('--spp-white', '#F5F4F5');
-        document.documentElement.style.setProperty('--spp-gray', '#98A8B0');
-        document.documentElement.style.setProperty('--spp-red', '#EE4C27');
-        document.documentElement.style.setProperty('--spp-beige', '#D08B58');
-        document.documentElement.style.setProperty('--spp-blue', '#10273B');
-    }
+    document.documentElement.style.setProperty('--spp-white', isDarkMode == "true" ? 'black' : '#F5F4F5');
+    document.documentElement.style.setProperty('--spp-gray', isDarkMode == "true" ? 'white' : '#98A8B0');
+    document.documentElement.style.setProperty('--spp-red', isDarkMode == "true" ? 'darkred' : '#EE4C27');
+    document.documentElement.style.setProperty('--spp-beige', isDarkMode == "true" ? 'darkgoldenrod' : '#D08B58');
+    document.documentElement.style.setProperty('--spp-blue', isDarkMode == "true" ? 'indigo' : '#10273B');
 }

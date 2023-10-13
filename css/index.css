@@ -23,13 +23,13 @@
     margin: 15% 6%;
     padding: 1% 4%;
     border-radius: 15px;
-    color: var(--spp-white);
+    color: #F5F4F5;
     box-shadow: 0 0 20px #111;
 }
 
 .index-title-container h1 {
     font-size: 4ch;
-    color: var(--spp-white);
+    color: #F5F4F5;
     text-shadow: 0 0 10px #aae;
 }
 

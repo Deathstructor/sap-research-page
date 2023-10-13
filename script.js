@@ -1,7 +1,14 @@
 var isDarkMode = localStorage.getItem("IsDark") || "false";
 var cookieOK = localStorage.getItem("CookieOK");
+var checkbox = document.querySelector('#dark-mode');
 
 UpdatePageTheme();
+Load();
+
+function Load() {
+    var checked = JSON.parse(localStorage.getItem("dark-mode"));
+    document.getElementById("dark-mode").checked = checked;
+}
 
 if(!cookieOK) {
     if(confirm("Do you want to save cookies?")) {
@@ -26,7 +33,10 @@ function ToggleTheme() {
 }
 
 function SaveTheme() {
-    if(cookieOK) localStorage.setItem("IsDark", isDarkMode);
+    if(cookieOK) {
+        localStorage.setItem("IsDark", isDarkMode);
+        localStorage.setItem('dark-mode', isDarkMode)
+    }
 }
 
 function UpdatePageTheme() {
